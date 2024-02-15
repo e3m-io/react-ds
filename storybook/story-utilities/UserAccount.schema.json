@@ -1,0 +1,87 @@
+{
+	"type": "object",
+	"properties": {
+		"given_name": {
+			"type": "string",
+			"minLength": 1
+		},
+		"family_name": {
+			"type": "string",
+			"minLength": 1
+		},
+		"email": {
+			"type": "string",
+			"minLength": 1,
+			"format": "email"
+		},
+		"username": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 25,
+			"pattern": "^[a-zA-Z0-9]+$"
+		},
+		"password": {
+			"type": "string",
+			"minLength": 5
+		},
+		"street_address": {
+			"type": "string",
+			"minLength": 1
+		},
+		"country": {
+			"type": "string",
+			"minLength": 1
+		},
+		"postal_code": {
+			"type": "string",
+			"minLength": 1
+		},
+		"subscribe": {
+			"type": "boolean"
+		},
+		"subscription_type": {
+			"oneOf": [
+				{
+					"const": "free",
+					"title": "Free"
+				},
+				{
+					"const": "enterprise",
+					"title": "Enterprise"
+				},
+				{
+					"const": "cloud",
+					"title": "Cloud"
+				}
+			]
+		},
+		"region": {
+			"oneOf": [
+				{
+					"const": "us-east-1"
+				},
+				{
+					"const": "us-east-2"
+				},
+				{
+					"const": "us-west-1"
+				},
+				{
+					"const": "us-west-2"
+				}
+			]
+		}
+	},
+	"required": [
+		"given_name",
+		"family_name",
+		"email",
+		"username",
+		"password",
+		"street_address",
+		"country",
+		"postal_code",
+		"subscribe",
+		"subscription_type"
+	]
+}

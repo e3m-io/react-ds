@@ -1,18 +1,9 @@
 import { forwardRef } from "react";
 import { clsx } from "clsx";
-
-export type ButtonProps = {
-	variant: "default" | "warning" | "danger";
-	weight: "primary" | "secondary" | "tertiary";
-};
-
-export const getButtonClasses = (
-	props: Pick<ButtonProps, "variant" | "weight">
-) => `btn btn--vt-${props.variant} btn--wt-${props.weight}` as const;
-
-export const getIconButtonClasses = (
-	props: Pick<ButtonProps, "variant" | "weight">
-) => `${getButtonClasses(props)} btn--icon-only` as const;
+import {
+	getButtonClasses,
+	type ButtonProps,
+} from "@e3m-io/css-ds/components/Button";
 
 export const Button = forwardRef<
 	HTMLButtonElement,

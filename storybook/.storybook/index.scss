@@ -1,0 +1,48 @@
+@use "@e3m-io/css-utils/globals/reset";
+@use "@e3m-io/css-ds/scss/tokens/bg" as bg;
+@use "@e3m-io/css-ds/scss/tokens/border" as border;
+@use "@e3m-io/css-ds/scss/tokens/color" as color;
+@use "@e3m-io/css-ds/scss/tokens/scale" as scale;
+@use "@e3m-io/css-ds/scss/tokens/text" as text;
+@use "@e3m-io/css-ds/scss/components/index" as components;
+@use "@e3m-io/css-ds/scss/utility-classes/index" as themeUtils;
+@use "@e3m-io/css-utils/utility-classes/index";
+@import "@fortawesome/fontawesome-free/css/all.css";
+:root {
+	@include color.color;
+	@include scale.scale;
+	@include text.textScale;
+	@include text.textWeight;
+
+	background-color: var(--bg--sunken);
+	color: var(--color--sunken);
+	font-family: system-ui;
+	font-size: var(--text-size--base);
+}
+
+.theme-light {
+	@include bg.bgLight;
+	@include border.borderLight;
+	@include color.colorLight;
+
+	@include components.themeLight();
+}
+
+.theme-dark {
+	@include bg.bgDark;
+	@include border.borderDark;
+	@include color.colorDark;
+	@include components.themeDark();
+}
+
+e3m-select::part(options) {
+	@extend .listbox;
+	@extend .elevation-default;
+}
+
+e3m-select-option::part(root) {
+	@extend .listbox-item;
+}
+e3m-select-trigger::part(root) {
+	@extend .form-control;
+}

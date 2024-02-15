@@ -2,8 +2,8 @@ import { forwardRef } from "react";
 import { clsx } from "clsx";
 
 export type ButtonProps = {
-	variant: "normal" | "warning" | "danger";
-	weight: "primary" | "normal";
+	variant: "default" | "warning" | "danger";
+	weight: "primary" | "secondary" | "tertiary";
 };
 
 export const getButtonClasses = (

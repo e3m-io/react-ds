@@ -1,0 +1,25 @@
+{
+	"name": "@e3m-io/ds",
+	"version": "1.0.0",
+	"author": "e3m-io",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/e3m-io/ds.git"
+	},
+	"dependencies": {
+		"@e3m-io/css-ds": "github:e3m-io/css-ds",
+		"@floating-ui/react-dom": "^2.0.8",
+		"@types/json-schema": "^7.0.15",
+		"@types/react": "^18.2.55",
+		"clsx": "^2.1.0",
+		"react": "^18.2.0",
+		"react-transition-group": "^4.4.5"
+	},
+	"devDependencies": {
+		"@types/react-transition-group": "^4.4.10",
+		"typescript": "^5.3.3"
+	},
+	"type": "module",
+	"packageManager": "pnpm@8.15.3"
+}

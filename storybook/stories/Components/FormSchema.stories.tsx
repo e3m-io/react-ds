@@ -1,15 +1,12 @@
-// import { fullFormats } from "ajv-formats/dist/formats";
 import UserAccountSchema from "../../story-utilities/UserAccount.schema.json";
 import { UserFormUISchema } from "../../story-utilities/UserForm.schema";
-import { renderUISchema } from "../../FormUtils/renderUISchema";
-import { Button } from "../../../src";
-import type { JSONSchema7 } from "json-schema";
+import { Button, FormSchema } from "../../../src";
 
 export default {
-	title: "Examples/Form",
+	title: "Components/FormSchema",
 };
 
-export const JSONForm = () => {
+export const Default = () => {
 	return (
 		<form
 			className="form"
@@ -19,11 +16,11 @@ export const JSONForm = () => {
 				console.log(Object.fromEntries(new FormData(e.currentTarget)));
 			}}
 		>
-			{renderUISchema(UserAccountSchema as JSONSchema7)(UserFormUISchema)}
+			<FormSchema dataSchema={UserAccountSchema} uiSchema={UserFormUISchema} />
 			<Button
 				className="mt-205 w-full"
 				type="submit"
-				variant="default"
+				variant="normal"
 				weight="primary"
 			>
 				Submit
@@ -31,3 +28,5 @@ export const JSONForm = () => {
 		</form>
 	);
 };
+
+Default.storyName = "FormSchema";

@@ -6,7 +6,7 @@ import {
 	Select,
 	SelectOption,
 	TextInput,
-} from "../../src";
+} from "..";
 import type { ControlSchema } from "./FormUISchema.type";
 import type { JSONSchema7 } from "json-schema";
 import jsonpointer from "jsonpointer";
@@ -160,14 +160,17 @@ export const renderControlSchema =
 		const getControlSchema = () => controlSchema;
 		const getFieldSchema = () =>
 			jsonpointer.get(
-				formSchema.properties,
+				formSchema.properties!,
 				controlSchema.scope
 			) as JSONSchema7;
 		const renderer = BuiltinRenderers.get(
 			controlSchema.options?.format || "text"
 		);
 		if (!renderer) {
-			return <p>Unsupported input type</p>;
+			console.error(
+				`Form: Unsupported input type "${controlSchema.options?.format}"`
+			);
+			return null;
 		}
 
 		return renderer(getControlSchema, getFieldSchema);

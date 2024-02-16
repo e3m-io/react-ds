@@ -20,6 +20,9 @@ dependencies:
   clsx:
     specifier: ^2
     version: 2.1.0
+  jsonpointer:
+    specifier: ^5
+    version: 5.0.1
   react:
     specifier: '>=16.8.0'
     version: 16.14.0
@@ -117,6 +120,11 @@ packages:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
 
+  /jsonpointer@5.0.1:
+    resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
@@ -198,11 +206,11 @@ packages:
     name: '@e3m-io/css-ds'
     version: 1.0.0
     dependencies:
-      '@e3m-io/css-utils': github.com/e3m-io/css-utils/76b8ce85ea024d2d7413192798a79893fa0d7cc2
+      '@e3m-io/css-utils': github.com/e3m-io/css-utils/a84c62ef74f7b66e1679e65b2a1b1e1c9e329e32
     dev: false
 
-  github.com/e3m-io/css-utils/76b8ce85ea024d2d7413192798a79893fa0d7cc2:
-    resolution: {tarball: https://codeload.github.com/e3m-io/css-utils/tar.gz/76b8ce85ea024d2d7413192798a79893fa0d7cc2}
+  github.com/e3m-io/css-utils/a84c62ef74f7b66e1679e65b2a1b1e1c9e329e32:
+    resolution: {tarball: https://codeload.github.com/e3m-io/css-utils/tar.gz/a84c62ef74f7b66e1679e65b2a1b1e1c9e329e32}
     name: '@e3m-io/css-utils'
     version: 1.0.0
     dev: false

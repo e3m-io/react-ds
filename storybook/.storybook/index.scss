@@ -1,9 +1,6 @@
 @use "@e3m-io/css-utils/globals/reset";
 @use "@e3m-io/css-utils/dist/index.css";
 
-@use "@e3m-io/css-ds/scss/components/index" as components;
-@use "@e3m-io/css-ds/scss/styles/index" as styles;
-
 @use "@e3m-io/css-ds/themes/light" as lightTheme;
 @use "@e3m-io/css-ds/themes/dark" as darkTheme;
 

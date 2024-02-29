@@ -5,8 +5,9 @@
 		"build": "storybook build"
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^6.4.2",
+		"@e3m-io/css-ds": "github:e3m-io/css-ds",
 		"@e3m-io/css-utils": "github:e3m-io/css-utils",
+		"@fortawesome/fontawesome-free": "^6.4.2",
 		"ajv": "^8.12.0",
 		"ajv-errors": "^3.0.0",
 		"ajv-formats": "^2.1.1",

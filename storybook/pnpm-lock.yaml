@@ -5,9 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@e3m-io/css-ds':
+    specifier: github:e3m-io/css-ds
+    version: github.com/e3m-io/css-ds/57b1d7a0292c495307b61e0c1e4491eaa46c4c68
   '@e3m-io/css-utils':
     specifier: github:e3m-io/css-utils
-    version: github.com/e3m-io/css-utils/76b8ce85ea024d2d7413192798a79893fa0d7cc2
+    version: github.com/e3m-io/css-utils/697395ec2674664378de7d5d77e1163d79a5cfc4
   '@fortawesome/fontawesome-free':
     specifier: ^6.4.2
     version: 6.5.1
@@ -7705,8 +7708,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/e3m-io/css-utils/76b8ce85ea024d2d7413192798a79893fa0d7cc2:
-    resolution: {tarball: https://codeload.github.com/e3m-io/css-utils/tar.gz/76b8ce85ea024d2d7413192798a79893fa0d7cc2}
+  github.com/e3m-io/css-ds/57b1d7a0292c495307b61e0c1e4491eaa46c4c68:
+    resolution: {tarball: https://codeload.github.com/e3m-io/css-ds/tar.gz/57b1d7a0292c495307b61e0c1e4491eaa46c4c68}
+    name: '@e3m-io/css-ds'
+    version: 1.0.0
+    dev: false
+
+  github.com/e3m-io/css-utils/697395ec2674664378de7d5d77e1163d79a5cfc4:
+    resolution: {tarball: https://codeload.github.com/e3m-io/css-utils/tar.gz/697395ec2674664378de7d5d77e1163d79a5cfc4}
     name: '@e3m-io/css-utils'
     version: 1.0.0
+    requiresBuild: true
     dev: false

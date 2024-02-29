@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@e3m-io/css-ds':
     specifier: github:e3m-io/css-ds
-    version: github.com/e3m-io/css-ds/133f0d847aa75d50999cd59bf8c4ef3dadfba5ab
+    version: github.com/e3m-io/css-ds/9d19e50a1b2fe4c3149b3cc875a0fd6cdb4d5912
   '@floating-ui/react-dom':
     specifier: ^2
     version: 2.0.8(react-dom@16.14.0)(react@16.14.0)
@@ -201,16 +201,10 @@ packages:
     hasBin: true
     dev: true
 
-  github.com/e3m-io/css-ds/133f0d847aa75d50999cd59bf8c4ef3dadfba5ab:
-    resolution: {tarball: https://codeload.github.com/e3m-io/css-ds/tar.gz/133f0d847aa75d50999cd59bf8c4ef3dadfba5ab}
+  github.com/e3m-io/css-ds/9d19e50a1b2fe4c3149b3cc875a0fd6cdb4d5912:
+    resolution: {tarball: https://codeload.github.com/e3m-io/css-ds/tar.gz/9d19e50a1b2fe4c3149b3cc875a0fd6cdb4d5912}
     name: '@e3m-io/css-ds'
     version: 1.0.0
-    dependencies:
-      '@e3m-io/css-utils': github.com/e3m-io/css-utils/a84c62ef74f7b66e1679e65b2a1b1e1c9e329e32
-    dev: false
-
-  github.com/e3m-io/css-utils/a84c62ef74f7b66e1679e65b2a1b1e1c9e329e32:
-    resolution: {tarball: https://codeload.github.com/e3m-io/css-utils/tar.gz/a84c62ef74f7b66e1679e65b2a1b1e1c9e329e32}
-    name: '@e3m-io/css-utils'
-    version: 1.0.0
+    prepare: true
+    requiresBuild: true
     dev: false

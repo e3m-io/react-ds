@@ -2,6 +2,7 @@ export * from "./Button";
 export * from "./Checkbox";
 export * from "./FadeIn";
 export * from "./FloatingContainer";
+export * from "./LoadingOverlay";
 export * from "./FormSchema";
 export * from "./MaskedInput";
 export * from "./Radio";

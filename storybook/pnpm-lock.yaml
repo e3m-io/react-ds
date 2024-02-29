@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@e3m-io/css-ds':
     specifier: github:e3m-io/css-ds
-    version: github.com/e3m-io/css-ds/11b3376f2b2d30572accc28e249718383be6d9ec
+    version: github.com/e3m-io/css-ds/f9bcb492f503a8af86c083fcae99db3e0743e1ee
   '@e3m-io/css-utils':
     specifier: github:e3m-io/css-utils
     version: github.com/e3m-io/css-utils/697395ec2674664378de7d5d77e1163d79a5cfc4
@@ -7660,8 +7660,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/e3m-io/css-ds/11b3376f2b2d30572accc28e249718383be6d9ec:
-    resolution: {tarball: https://codeload.github.com/e3m-io/css-ds/tar.gz/11b3376f2b2d30572accc28e249718383be6d9ec}
+  github.com/e3m-io/css-ds/f9bcb492f503a8af86c083fcae99db3e0743e1ee:
+    resolution: {tarball: https://codeload.github.com/e3m-io/css-ds/tar.gz/f9bcb492f503a8af86c083fcae99db3e0743e1ee}
     name: '@e3m-io/css-ds'
     version: 1.0.0
     dev: false

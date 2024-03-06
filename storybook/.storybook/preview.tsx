@@ -8,3 +8,11 @@ export const parameters = {
 		stylePreview: true,
 	},
 };
+
+export const decorators = [
+	(Story) => (
+	  <div className="elevation-sunken p-2 h-full border-box overflow-y-auto">
+		<Story />
+	  </div>
+	),
+  ]

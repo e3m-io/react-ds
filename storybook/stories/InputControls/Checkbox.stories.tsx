@@ -5,7 +5,16 @@ export default {
 };
 
 export const Default = () => {
-	return <Checkbox />;
+	return (
+		<div>
+			<div className="elevation-sunken p-1">
+				<Checkbox />
+			</div>
+			<div className="elevation-default p-1">
+				<Checkbox />
+			</div>
+		</div>
+	);
 };
 
 Default.storyName = "Checkbox";
